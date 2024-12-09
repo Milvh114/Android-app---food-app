@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "483835435895",
+    "firebase_url": "https://food-app-98c6e-default-rtdb.firebaseio.com",
+    "project_id": "food-app-98c6e",
+    "storage_bucket": "food-app-98c6e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483835435895:android:a8130d1a5fc919aebb1f72",
+        "android_client_info": {
+          "package_name": "com.example.eatathomev2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBA-7PNtfH4UFeFtr4095cwaSF3Cg7D-s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483835435895:android:9f6ad527e28dc0aabb1f72",
+        "android_client_info": {
+          "package_name": "com.example.home_app_food"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBA-7PNtfH4UFeFtr4095cwaSF3Cg7D-s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483835435895:android:b8d4b5a99c90a83cbb1f72",
+        "android_client_info": {
+          "package_name": "com.milvh.app.foodbyme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBA-7PNtfH4UFeFtr4095cwaSF3Cg7D-s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
