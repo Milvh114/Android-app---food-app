@@ -142,7 +142,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:srcCompat="@drawable/arc" />
+        app:srcCompat="@drawable/arc_mdpi" />
 
     <View
         android:id="@+id/view"
@@ -158,7 +158,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choose your favorite diet ..."
+        android:text="Let's Find the Best &amp; Healthy Grocery"
         android:textColor="@color/white"
         android:textSize="28sp"
         android:textStyle="bold"

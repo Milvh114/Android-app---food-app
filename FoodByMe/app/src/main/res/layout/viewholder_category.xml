@@ -21,7 +21,7 @@
             android:layout_gravity="center"
             android:padding="12dp"
             android:background="@drawable/background_cat_0"
-            app:srcCompat="@drawable/ic_cat_0" />
+            app:srcCompat="@drawable/btn_1" />
 
         <TextView
             android:id="@+id/catNameTxt"
@@ -30,7 +30,7 @@
             android:layout_marginTop="8dp"
             android:text="title"
             android:textAlignment="center"
-            android:textColor="@color/blue_grey"
+            android:textColor="@color/white"
             android:textSize="18sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

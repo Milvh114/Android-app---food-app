@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.Firebase;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -63,6 +64,14 @@ public class MainActivity extends BaseActivity {
                 startActivity(intent);
             }
         });
+
+        binding.cartBtn.setOnClickListener( v -> {
+            Intent intent = new Intent(MainActivity.this, CartActivity.class);
+            startActivity(intent);
+        });
+
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        binding.usernameTxt.setText(user.getEmail());
     }
 
     private void initLocation() {

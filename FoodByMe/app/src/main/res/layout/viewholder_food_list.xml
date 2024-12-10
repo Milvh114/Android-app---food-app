@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="#60ffffff"
     app:cardElevation="3dp">
 
 
@@ -60,7 +61,7 @@
                 app:layout_constraintBottom_toBottomOf="@+id/timeTxt"
                 app:layout_constraintStart_toEndOf="@+id/timeTxt"
                 app:layout_constraintTop_toTopOf="@+id/timeTxt"
-                app:srcCompat="@drawable/pic_icon_time" />
+                app:srcCompat="@drawable/pic_ic_time_mdpi" />
 
             <TextView
                 android:id="@+id/priceTxt"
@@ -83,7 +84,7 @@
                 app:layout_constraintBottom_toBottomOf="@+id/priceTxt"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/priceTxt"
-                app:srcCompat="@drawable/pic_icon_star_mdpi" />
+                app:srcCompat="@drawable/pic_ic_star_ldpi" />
 
             <TextView
                 android:id="@+id/rateTxt"

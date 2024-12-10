@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     tools:context=".Activity.MainActivity">
 
     <ScrollView
@@ -28,14 +29,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Welcome"
+                    android:textColor="@color/white"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/usernameTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="name"
+                    android:text="Milvh"
+                    android:textColor="@color/white"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -48,7 +51,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/pic_ic_logout_ldpi" />
+                    app:srcCompat="@drawable/ic_logout_ldpi" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -68,14 +71,14 @@
                     android:layout_marginEnd="6dp"
                     android:layout_weight="1"
                     android:padding="12dp"
-                    android:background="@drawable/background_grey"
-                    app:srcCompat="@drawable/pic_settings" />
+                    android:background="@drawable/background_grey2"
+                    app:srcCompat="@drawable/ic_setting_ldpi" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="6"
-                    android:background="@drawable/background_grey"
+                    android:background="@drawable/background_grey2"
                     android:orientation="horizontal">
 
                     <EditText
@@ -83,8 +86,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@drawable/background_grey"
+                        android:background="@drawable/background_grey2"
                         android:ems="10"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
                         android:hint="Search menu..."
                         android:inputType="text"
                         android:textAlignment="center" />
@@ -94,7 +99,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="16dp"
-                        app:srcCompat="@drawable/pic_icon_search" />
+                        app:srcCompat="@drawable/ic_search_ldpi" />
 
                 </LinearLayout>
 
@@ -104,8 +109,8 @@
                     android:layout_height="50dp"
                     android:padding="16dp"
                     android:layout_marginStart="6dp"
-                    android:background="@drawable/background_grey"
-                    app:srcCompat="@drawable/pic_icon_basket" />
+                    android:background="@drawable/background_grey2"
+                    app:srcCompat="@drawable/ic_basket_ldpi" />
             </LinearLayout>
 
             <LinearLayout
@@ -121,7 +126,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="0.3333"
-                    android:background="@drawable/background_grey"
+                    android:background="@drawable/background_grey2"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -130,7 +135,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginStart="8dp"
-                        app:srcCompat="@drawable/pic_ic_location_ldpi" />
+                        app:srcCompat="@drawable/sp_location_ldpi" />
 
                     <Spinner
                         android:id="@+id/locationSp"
@@ -147,7 +152,7 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginEnd="4dp"
                     android:layout_weight="0.3333"
-                    android:background="@drawable/background_grey"
+                    android:background="@drawable/background_grey2"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -156,7 +161,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_gravity="center"
-                        app:srcCompat="@drawable/pic_ic_time_ldpi" />
+                        app:srcCompat="@drawable/sp_time_ldpi" />
 
                     <Spinner
                         android:id="@+id/timeSp"
@@ -173,7 +178,7 @@
                     android:layout_height="48dp"
                     android:layout_marginStart="8dp"
                     android:layout_weight="0.3333"
-                    android:background="@drawable/background_grey"
+                    android:background="@drawable/background_grey2"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -182,7 +187,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_gravity="center"
-                        app:srcCompat="@drawable/pic_ic_dollar_ldpi" />
+                        app:srcCompat="@drawable/sp_dollar_ldpi" />
 
                     <Spinner
                         android:id="@+id/priceSp"
@@ -213,7 +218,7 @@
                     android:layout_weight="1"
                     android:textSize="22sp"
                     android:textStyle="bold"
-                    android:textColor="@color/blue_grey"
+                    android:textColor="@color/white"
                     android:text="Today's best Menu" />
 
                 <TextView
@@ -221,7 +226,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="@color/red"
+                    android:textColor="@color/white"
                     android:text="VIEW ALL" />
             </LinearLayout>
 
@@ -262,8 +267,8 @@
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:text="Choose Kind Of Menu"
-                android:textColor="@color/blue_grey"
+                android:text="Choose Kind Of Diet"
+                android:textColor="@color/white"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -297,9 +302,33 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Choose Food Available"
-                android:textColor="@color/blue_grey"
+                android:textColor="@color/white"
                 android:textSize="22sp"
                 android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <ProgressBar
+                    android:id="@+id/progressBarFood"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/foodView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
     </ScrollView>

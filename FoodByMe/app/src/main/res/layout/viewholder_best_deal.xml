@@ -6,10 +6,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="8dp"
     app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="#60ffffff"
     app:cardElevation="3dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+
         android:layout_height="match_parent">
 
         <ImageView
@@ -24,6 +26,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:background="#60ffffff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -60,7 +63,7 @@
                 app:layout_constraintBottom_toBottomOf="@+id/starTxt"
                 app:layout_constraintStart_toEndOf="@+id/starTxt"
                 app:layout_constraintTop_toTopOf="@+id/starTxt"
-                app:srcCompat="@drawable/pic_icon_star_mdpi" />
+                app:srcCompat="@drawable/pic_ic_star_mdpi" />
 
             <TextView
                 android:id="@+id/textView15"
@@ -93,7 +96,7 @@
                 app:layout_constraintBottom_toBottomOf="@+id/timeTxt"
                 app:layout_constraintStart_toEndOf="@+id/timeTxt"
                 app:layout_constraintTop_toTopOf="@+id/timeTxt"
-                app:srcCompat="@drawable/pic_icon_time" />
+                app:srcCompat="@drawable/pic_ic_time_mdpi" />
 
             <TextView
                 android:id="@+id/priceTxt"

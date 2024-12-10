@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     tools:context=".Activity.ListFoodsActivity">
 
 
@@ -33,7 +34,7 @@
                     android:padding="12dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/arrow_mdpi" />
+                    app:srcCompat="@drawable/back_mdpi" />
 
                 <TextView
                     android:id="@+id/titleTxt"
@@ -42,7 +43,7 @@
                     android:text="Title"
                     android:textSize="24dp"
                     android:textStyle="bold"
-                    android:textColor="@color/blue_grey"
+                    android:textColor="@color/white"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/backBtnView"

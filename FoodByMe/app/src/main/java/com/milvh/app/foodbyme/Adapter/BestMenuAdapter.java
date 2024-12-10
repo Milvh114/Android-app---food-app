@@ -1,6 +1,7 @@
 package com.milvh.app.foodbyme.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
+import com.milvh.app.foodbyme.Activity.DetailActivity;
 import com.milvh.app.foodbyme.Domain.Food;
 import com.milvh.app.foodbyme.R;
 
@@ -47,6 +49,11 @@ public class BestMenuAdapter extends RecyclerView.Adapter<BestMenuAdapter.viewho
                 .transform(new CenterCrop(), new RoundedCorners(20))
                 .into(holder.pic);
 
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, DetailActivity.class);
+            intent.putExtra("object", items.get(position));
+            context.startActivity(intent);
+        });
     }
 
     @Override

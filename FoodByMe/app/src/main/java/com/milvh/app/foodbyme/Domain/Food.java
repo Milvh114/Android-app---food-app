@@ -1,6 +1,8 @@
 package com.milvh.app.foodbyme.Domain;
 
-public class Food {
+import java.io.Serializable;
+
+public class Food implements Serializable {
     private int CategoryId;
     private int Id;
     private int LocationId;
