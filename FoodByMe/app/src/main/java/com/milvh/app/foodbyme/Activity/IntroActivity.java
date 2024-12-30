@@ -1,11 +1,14 @@
 package com.milvh.app.foodbyme.Activity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.VideoView;
 
 import androidx.activity.EdgeToEdge;
 
+import com.milvh.app.foodbyme.R;
 import com.milvh.app.foodbyme.databinding.ActivityIntroBinding;
 
 public class IntroActivity extends BaseActivity {
@@ -60,5 +63,11 @@ public class IntroActivity extends BaseActivity {
                 finish();
             }
         });
+
+        VideoView videoView = binding.videoView;
+        Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.vid_logo_black);
+
+        videoView.setVideoURI(videoUri);
+        videoView.setOnPreparedListener(mp -> videoView.start());
     }
 }

@@ -1,6 +1,7 @@
 package com.milvh.app.foodbyme.Activity;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,10 +31,23 @@ public class DetailActivity extends BaseActivity {
         binding = ActivityDetailBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         getWindow().setStatusBarColor(getResources().getColor(R.color.black));
+        hideSystemUI();
 
         getIntentExtra();
         setVariable();
 
+    }
+
+    private void hideSystemUI() {
+        View decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_IMMERSIVE
+                        | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                        | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_FULLSCREEN
+        );
     }
 
     private void setVariable() {
@@ -64,7 +78,7 @@ public class DetailActivity extends BaseActivity {
             }
         });
 
-        binding.addBtn.setOnClickListener(v -> {
+        binding.addToCartBtn.setOnClickListener(v -> {
             object.setNumberInCart(num);
             managmentCart.insertFood(object);
         });
